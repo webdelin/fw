@@ -25,6 +25,7 @@ class Router {
     //}
     
     protected static $routes    = [];
+    
     protected static $route     = [];
     
     public static function add($regexp, $route = []){
@@ -40,6 +41,7 @@ class Router {
     }
     
     public static function matchRoute($url){
+        $url = self::removeQueryString($url);
         foreach (self::$routes as $pattern => $route){
             if(preg_match("#$pattern#i", $url, $matches)){
                 foreach ($matches as $k => $v){
@@ -61,13 +63,13 @@ class Router {
     
     public static function dispatch($url){
         if(self::matchRoute($url)){
-            $controller = 'src\controllers\\' . self::$route['controller'];
-            //debug(self::$route);
+            $controller = 'src\controllers\\' . self::$route['controller'] . 'Controller';
             if(class_exists($controller)){
                 $contObj = new $controller(self::$route);
                 $action = self::lowerCamelCase(self::$route['action']) . 'Action';
                 if(method_exists($contObj, $action)){
                     $contObj->$action();
+                    $contObj->getView();
                 }  else {
                     echo "Methode <strong>$controller::$action</strong> nicht gefunden";
                 }
@@ -83,7 +85,21 @@ class Router {
     protected static function upperCamelCase($name) {
         return str_replace(' ', '', ucwords(str_replace('-', ' ', $name)));
     }
+    
     protected static function lowerCamelCase($name) {
         return lcfirst(self::upperCamelCase($name));
+    }
+    
+    protected static function removeQueryString($url) {
+        
+        if($url){
+            $params = explode('&', $url, 2);
+            if (false === strpos($params[0], '=')) {
+                return rtrim($params[0], '/');
+            }else{
+                return '';
+            }
+        }
+        return $url;
     }
 }

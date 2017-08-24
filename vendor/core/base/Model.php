@@ -19,28 +19,24 @@
 
 namespace vendor\core\base;
 
-abstract class Controller {
-        
-    public $route = [];
-    
-    public $view;
-    
-    public $template;
-    
-    public $vars = [];
+use vendor\core\Db;
 
-    public function __construct($route) {
-        $this->route = $route;
-        $this->view = $route['action'];
+abstract class Model {
+    
+    protected  $pdo;
+    protected  $table;
+    
+    public function __construct() {
+        $this->pdo = Db::instance();
     }
     
-    public function getView() {
-        $vObj = new View($this->route, $this->template, $this->view);
-        $vObj->render($this->vars);        
+    public function query($sql) {
+        return $this->pdo->execute($sql);
     }
     
-    public function set($vars) {
-        $this->vars = $vars;
+    public function findAll() {
+        $sql = "SELECT * FROM {$this->table}";
+        return $this->pdo->query($sql);
     }
     
 }

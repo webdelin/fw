@@ -1,5 +1,4 @@
 <?php
-
 /**
  * PHP 5.6 ->
  *
@@ -17,30 +16,18 @@
  * @license         MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-namespace vendor\core\base;
 
-abstract class Controller {
-        
-    public $route = [];
-    
-    public $view;
-    
-    public $template;
-    
-    public $vars = [];
+namespace src\controllers;
 
-    public function __construct($route) {
-        $this->route = $route;
-        $this->view = $route['action'];
+class PostsController extends AppController{
+
+    public function indexAction() {
+        echo 'Post::index';
     }
     
-    public function getView() {
-        $vObj = new View($this->route, $this->template, $this->view);
-        $vObj->render($this->vars);        
-    }
-    
-    public function set($vars) {
-        $this->vars = $vars;
+    public function testAction() {
+        echo 'Post::test';
+        debug($this->route);
     }
     
 }

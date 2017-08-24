@@ -17,30 +17,14 @@
  * @license         MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-namespace vendor\core\base;
+namespace src\controllers;
 
-abstract class Controller {
-        
-    public $route = [];
+class PageController extends AppController{
     
-    public $view;
-    
-    public $template;
-    
-    public $vars = [];
-
-    public function __construct($route) {
-        $this->route = $route;
-        $this->view = $route['action'];
-    }
-    
-    public function getView() {
-        $vObj = new View($this->route, $this->template, $this->view);
-        $vObj->render($this->vars);        
-    }
-    
-    public function set($vars) {
-        $this->vars = $vars;
+    public function  viewAction(){
+        debug($this->route);
+        debug($_GET);
+        echo 'Pages::view';
     }
     
 }

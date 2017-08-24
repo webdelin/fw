@@ -17,30 +17,10 @@
  * @license         MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-namespace vendor\core\base;
+namespace src\models;
 
-abstract class Controller {
-        
-    public $route = [];
+class Main extends \vendor\core\base\Model{
     
-    public $view;
-    
-    public $template;
-    
-    public $vars = [];
-
-    public function __construct($route) {
-        $this->route = $route;
-        $this->view = $route['action'];
-    }
-    
-    public function getView() {
-        $vObj = new View($this->route, $this->template, $this->view);
-        $vObj->render($this->vars);        
-    }
-    
-    public function set($vars) {
-        $this->vars = $vars;
-    }
+    public $table = 'products';
     
 }

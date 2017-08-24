@@ -19,15 +19,22 @@
 
 namespace src\controllers;
 
-class Posts extends \vendor\core\base\Controller{
-
+class PostsNewController extends AppController{
+    
     public function indexAction() {
-        echo 'Post::index';
+        echo 'PostNew::index';
     }
     
     public function testAction() {
-        echo 'Post::test';
-        debug($this->route);
+        echo 'PostNew::test';
+    }
+    
+    public function testPageAction() {
+        echo 'PostNew::testPage';
+    }
+    
+    public function before() {
+        echo 'PostNew::before';
     }
     
 }

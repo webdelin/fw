@@ -1,0 +1,9 @@
+nbproject
+.nbproject
+.classpath
+.project
+.settings
+.idea
+.metadata
+*.iml
+*.ipr

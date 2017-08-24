@@ -16,7 +16,6 @@
  * @license         MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-
 error_reporting(-1);
 
 use vendor\core\Router;
@@ -27,12 +26,9 @@ define('WWW', __DIR__);
 define('CORE', dirname(__DIR__) . '/vendor/core');
 define('ROOT', dirname(__DIR__));
 define('SRC', dirname(__DIR__) . '/src');
+define('TEMPLATE', 'default');
 
-//require '../vendor/core/Router.php';
 require '../vendor/libs/functions.php';
-//require '../src/controllers/Main.php';
-//require '../src/controllers/Posts.php';
-//require '../src/controllers/PostsNew.php';
 
 spl_autoload_register(function($class){
     $file = ROOT . '/' . str_replace('\\', '/', $class) . '.php';
@@ -41,17 +37,13 @@ spl_autoload_register(function($class){
     }
 });
 
-//Router::add('posts/add', ['controller' => 'Posts', 'action' => 'add']);
-//Router::add('posts', ['controller' => 'Posts', 'action' => 'index']);
-//Router::add('', ['controller' => 'Main', 'action' => 'index']);
-
-Router::add('^pages/?(?P<action>[a-z-]+)?$', ['controller' => 'Posts']);
+Router::add('^page/(?P<action>[a-z-]+)/(?P<alias>[a-z-]+)$', ['controller' => 'Page']);
+Router::add('^page/(?P<alias>[a-z-]+)$', ['controller' => 'Page', 'action' => 'view']);
 
 //Standart Routs
 Router::add('^$', ['controller' => 'Main', 'action' => 'index']);
 Router::add('^(?P<controller>[a-z-]+)/?(?P<action>[a-z-]+)?$');
 
-//debug(Router::getRoutes());
 
 Router::dispatch($url);
 

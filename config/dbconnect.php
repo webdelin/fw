@@ -1,4 +1,5 @@
 <?php
+
 /**
  * PHP 5.6 ->
  *
@@ -16,25 +17,8 @@
  * @license         MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-
-namespace src\controllers;
-
-class PostsNew {
-    
-    public function indexAction() {
-        echo 'PostNew::index';
-    }
-    
-    public function testAction() {
-        echo 'PostNew::test';
-    }
-    
-    public function testPageAction() {
-        echo 'PostNew::testPage';
-    }
-    
-    public function before() {
-        echo 'PostNew::before';
-    }
-    
-}
+return [
+    'dsn' => 'mysql:host=localhost;dbname=fw;charset=utf8',
+    'user' => 'root',
+    'pass' => '',
+];
