@@ -2,26 +2,14 @@
 <html lang="de">
   <head>
     <meta charset="utf-8">
-    <title><?=$meta['title']?></title>
-    <meta name="description" content="<?=$meta['description']?>">
-    <meta name="keywords" content="<?=$meta['keywords']?>">
+    <title>Default Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/custom.css">
   </head>
   <body>
     <div class="container">
-        <?php if(!empty($menu)): ?>
-            <div id="menu">
-                <ul>
-                  <?php foreach ($menu as $item):?>
-                    <li><a href="catalog/<?=$item['id']?>"><?=$item['title']?></a></li>
-                  <?php endforeach;?>
-                </ul>
-            </div>
-        <div class="clear"></div>
-        <?php endif; ?>
-        
+        <p>Ohne Menu</p>
         <?=$content?>
       
     <?php // debug(vendor\core\Db::$countSql)?>

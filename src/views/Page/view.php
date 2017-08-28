@@ -17,15 +17,4 @@
  * @license         MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-namespace src\controllers;
-
-class PageController extends AppController{
-    
-    public function  viewAction(){
-        $menu = $this->menu;
-        $title = 'Page Controller';
-        $this->set(compact('title', 'menu'));
-        //debug($this->route);
-    }
-    
-}
+echo '<h1>Page View</h1>';

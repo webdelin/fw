@@ -28,7 +28,13 @@ class MainController extends AppController{
         $model = new Main;
         $products = \R::findAll('products');
         $menu = $this->menu;
-        $this->set(compact('title', 'products', 'menu'));
+        $title = 'MainController';
+        $this->setMeta('Start Seite', 'Startseite Description', 'Startseite Schlüsselwort');
+        $meta = $this->meta;
+        $this->set(compact('title', 'products', 'menu', 'meta'));
     }
     
+    public function testAction() {
+        $this->template = 'test';
+    }
 }
