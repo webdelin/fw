@@ -26,6 +26,7 @@ define('WWW', __DIR__);
 define('CORE', dirname(__DIR__) . '/vendor/core');
 define('ROOT', dirname(__DIR__));
 define('SRC', dirname(__DIR__) . '/src');
+define('LIBS', dirname(__DIR__) . '/vendor/libs');
 define('TEMPLATE', 'default');
 
 require '../vendor/libs/functions.php';

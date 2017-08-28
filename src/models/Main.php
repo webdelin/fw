@@ -22,5 +22,6 @@ namespace src\models;
 class Main extends \vendor\core\base\Model{
     
     public $table = 'products';
+    public $fkey = 'id';
     
 }

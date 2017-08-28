@@ -24,14 +24,11 @@ use src\models\Main;
 class MainController extends AppController{
     
     //public $template = 'main';
-
     public function indexAction() {
-        
         $model = new Main;
-        //$res = $model->query("CREATE TABLE products SELECT * FROM yii2_loc.product");
-        $products = $model->findAll();
-        $title = 'Meta Title';
-        $this->set(compact('title', 'products')); 
+        $products = \R::findAll('products');
+        $menu = $this->menu;
+        $this->set(compact('title', 'products', 'menu'));
     }
     
 }

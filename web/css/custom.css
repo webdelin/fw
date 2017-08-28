@@ -1,72 +1,40 @@
-.list-grid-demo .glyphicon {
-	margin-right: 5px;
+.title-header {padding: .75rem 1.25rem; background-color: #f5f5f5; border-bottom: 1px solid transparent;}
+.title-header h3 {font-size: 0.80rem; margin: 0;}
+.movies {margin-top: 2rem;}
+.img-card {width: 100%; margin-bottom: .40rem;}
+.movies {margin-bottom: .60rem;}
+.series {margin-bottom: .60rem;}
+.footer {padding: 1rem 0; margin-top: 2rem; font-size: 80%; text-align: left;}
+.footer p {margin: 0;}
+.footer-links {padding-left: 0; margin-bottom: 1rem;}
+.footer-links li {display: inline-block;}
+.footer a {font-weight: 500; color: inherit;}
+.footer-links li + li {margin-left: 1rem;}
+/* Bug Bootstrap V4.0.6 - Mobile - SCSS _navbar*/ 
+.navbar {display: block;}
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+#menu li {
+    float: left;
 }
-@media only screen and (min-width: 481px) {
-	.grid-group-wrapper.row {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.grid-group-wrapper.row:after,
-	.grid-group-wrapper.row:before {
-		display: flex;
-	}
-	.grid-group-wrapper.row {
-		> [class*='col-'] {
-			display: flex;
-			flex-direction: column;
-		}
-		.thumbnail,
-		.caption {
-			display: flex;
-			flex: 1 0 auto;
-			flex-direction: column;
-		}
-		.caption-text {
-			flex-grow: 1;
-		}
-		img {
-			width: 100%;
-			height: auto;
-		}
-		.price-buy-spacing {
-			display: flex;
-			justify-content: space-between;
-		}
-		.price-buy-spacing .lead {
-			margin-bottom: 0px;
-		}
-		.price-buy-spacing {
-			margin-bottom: 10px;
-		}
-	}
-	.list-group-wrapper {
-		.item {
-			float: none;
-			width: 100%;
-		}
-		.item:before,
-		.item:after {
-			display: table;
-			content: " ";
-		}
-		.item:after {
-			clear: both;
-		}
-		.item {
-			.thumbnail img {
-				margin-right: 10px;
-				float: left;
-			}
-			.caption,
-			.thumbnail {
-				display: flex;
-			}
-			.caption {
-				flex-direction: column;
-			}
-			.caption-text {
-				flex-grow: 1;
-			}
-		}
-	}
+
+#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 6px 10px;
+    text-decoration: none;
+    margin: 2px;
+    background-color: #ccc;
+}
+
+
+#menu li a:hover {
+    background-color: #aaa;
+    text-decoration: none;
 }

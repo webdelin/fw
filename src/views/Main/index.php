@@ -1,36 +1,25 @@
-<div class="container list-grid-demo">
-    <div class="well well-sm">
-        <strong>Display</strong>
-        <div class="btn-group">
-            <a href="#" id="list" class="btn btn-default btn-sm">
-                <span class="glyphicon glyphicon-th-list"></span>List
-            </a>
-            
-            <a href="#" id="grid" class="btn btn-default btn-sm">
-                <span class="glyphicon glyphicon-th"></span>Grid
-            </a>
-        </div>
-    </div>
-	
-    <div id="products" class="list-group-wrapper row">
-    <?php if(!empty($products)): ?>
-        <?php foreach ($products as $product): ?>
-            <div class="item  col-xs-4 col-lg-4">
-                <div class="thumbnail clearfix">
-                    <img src="http://placehold.it/400x250/000/fff" alt="" />
-                    <div class="caption">
-                        <h4 class="h3 "><?=$product['name']?></h4>
-                        <p class="caption-text"><?=$product['content']?></p>
-                        <div class="price-buy-spacing">
-                            <div class="lead"> € <?=$product['price']?></div>
-                            <div>
-                                <a class="btn btn-success" href="#">zum Shop</a>
-                            </div>		 
-                        </div>		 
+<main>
+    <section class="movies" id="movies">
+        <h2>Grid</h2>
+        <div class="row">
+            <?php if(!empty($products)): ?>
+                <?php foreach ($products as $product): ?>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <article class="card">
+                            <header class="title-header">
+                                <h3><?=$product['title']?></h3>
+                            </header>
+                            <div class="card-block">
+                                <div class="img-card">
+                                    <img src="https://placehold.it/300x250" alt="Movie" title="Movie" class="w-100" />
+                                </div>
+                                    <p class="tagline card-text text-xs-center"><?=$product['content']?></p>
+                                    <a href="#" class="btn btn-primary btn-block"><i class="fa fa-eye"></i> € <?=$product['price']?></a>
+                            </div>
+                        </article>
                     </div>
-                </div>
-            </div>
-        <?php endforeach; ?>
-    <?php endif; ?>
-    </div>
-</div>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        </div>
+    </section>
+</main>
