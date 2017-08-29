@@ -21,6 +21,7 @@ namespace src\controllers;
 
 use src\models\Main;
 use vendor\core\App;
+use vendor\core\base\View;
 
 class MainController extends AppController{
     
@@ -28,23 +29,32 @@ class MainController extends AppController{
     public function indexAction() {
 //        App::$app->getList();
         $model = new Main;
-        \R::fancyDebug(true);
+        //\R::fancyDebug(true);
         $products = App::$app->cache->get('products');
         if(!$products){
             $products = \R::findAll('products');
-            App::$app->cache->set('products', $products, 3600*24);
+            App::$app->cache->set('products', $products, 36);
         }
 //        echo date('Y-m-d H:i', time()) .'<br>';
 //        echo date('Y-m-d H:i', 1504080095) .'<br>';
         $product = \R::findOne('products', 'id = 2');
         $menu = $this->menu;
         $title = 'MainController';
-        $this->setMeta('Start Seite', 'Startseite Description', 'Startseite Schlüsselwort');
-        $meta = $this->meta;
+//        $this->setMeta('Start Seite', 'Startseite Description', 'Startseite Schlüsselwort');
+        //$meta = $this->meta;
+        View::setMeta('Start Seite', 'Startseite Description', 'Startseite Schlüsselwort');
         $this->set(compact('title', 'products', 'menu', 'meta'));
     }
     
     public function testAction() {
-        $this->template = 'test';
+        if($this->isAjax()){
+            $model = new Main;
+            $product = \R::findOne('products', "id = {$_POST['id']}");
+            $this->loadView('_test', compact('product'));
+            die;
+        }
+        echo 2222;
+        //$this->template = 'test';
     }
+    
 }

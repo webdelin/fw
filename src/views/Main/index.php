@@ -1,6 +1,7 @@
 <main>
     <section class="movies" id="movies">
         <h2>Grid</h2>
+        <button class="btn btn-default" id="senden">Senden</button>
         <div class="row">
             <?php if(!empty($products)): ?>
                 <?php foreach ($products as $product): ?>
@@ -23,3 +24,21 @@
         </div>
     </section>
 </main>
+<!--script src="/js/test.js"></script-->
+<script>
+$(function(){
+    $('#senden').click(function(){
+        $.ajax({
+            url: '/main/test',
+            type: 'post',
+            data: {'id': 2},
+            success: function(res){
+                console.log(res);
+            },
+            error: function(){
+                alert('Fehler!');
+            }
+        });
+    });
+});
+</script>

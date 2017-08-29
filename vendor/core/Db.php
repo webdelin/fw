@@ -21,8 +21,9 @@ namespace vendor\core;
 
 class Db {
     
+    use TSingleton;
+    
     protected $pdo;
-    protected static $instance;
     public static $countSql = 0;
     public static $queries = [];
 
@@ -40,12 +41,12 @@ class Db {
 //        $this->pdo = new \PDO($db['dsn'], $db['user'], $db['pass'], $options);
     }
     
-    public static function instance() {
-        if(self::$instance === null){
-            self::$instance = new self;
-        }
-        return self::$instance;
-    }
+//    public static function instance() {
+//        if(self::$instance === null){
+//            self::$instance = new self;
+//        }
+//        return self::$instance;
+//    }
     
 //    public function execute($sql, $params = []){
 //        self::$countSql++;

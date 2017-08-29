@@ -17,26 +17,17 @@
  * @license         MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-namespace src\controllers;
+namespace vendor\core;
 
-class AppController extends \vendor\core\base\Controller{
+trait TSingleton {
     
-    public $menu;
-    public $meta = [];
+protected static $instance;
 
-    public function __construct($route){
-        parent::__construct($route);
-//        if($this->route['action'] == 'test'){
-//            echo '<h1>Test</h1>';
-//        }
-        new \src\models\Main;
-        $this->menu = \R::findAll('category');
-    }
-    
-    protected function setMeta($title = '', $description = '', $keywords = '') {
-        $this->meta['title'] = $title;
-        $this->meta['description'] = $description;
-        $this->meta['keywords'] = $keywords;
+    public static function instance() {
+        if(self::$instance === null){
+            self::$instance = new self;
+        }
+        return self::$instance;
     }
     
 }

@@ -27,6 +27,10 @@ class View {
     
     public $template;
     
+    public $scripts = [];
+    
+    public static $meta = ['title' => '', 'description' => '', 'keywords' => ''];
+
     public function __construct($route, $template = '', $view = '') {
 
         $this->route = $route;
@@ -52,6 +56,11 @@ class View {
         if (false !== $this->template) {
             $file_template = SRC . "/views/template/{$this->template}.php";
             if(is_file($file_template)){
+                $content = $this->getScript($content);
+                $scripts = [];
+                if(!empty($this->scripts[0])){
+                    $scripts = $this->scripts[0];
+                }
                 require $file_template;
             }else{
                 echo "<p>Template <strong>$file_template</strong> wurde nicht gefunden</p>";
@@ -59,6 +68,28 @@ class View {
             
         }
         
+    }
+    
+    protected function getScript($content){
+        $pattern = "#<script.*?>.*?</script>#si";
+        preg_match_all($pattern, $content, $this->scripts);
+        if(!empty($this->scripts)){
+            $content = preg_replace($pattern, '', $content);
+        }
+        return $content;
+    }
+    
+    public static function getMeta() {
+        echo '<title>' . self::$meta['title'] . '</title> 
+             <meta name="description" content="' . self::$meta['description'] . '">
+             <meta name="keywords" content="' . self::$meta['keywords'] . '">';
+    }
+    
+    public static function setMeta($title = '', $description = '', $keywords = '') {
+        self::$meta['title'] = $title;
+        self::$meta['description'] = $description;
+        self::$meta['keywords'] = $keywords;
+
     }
     
 }
