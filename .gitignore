@@ -1,4 +1,5 @@
 nbproject
+tmp/cache*
 .nbproject
 .classpath
 .project

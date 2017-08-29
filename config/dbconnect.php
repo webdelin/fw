@@ -22,3 +22,9 @@ return [
     'user' => 'root',
     'pass' => '',
 ];
+//return [
+//    
+//   'dsn' => 'pgsql:host=localhost;dbname=fw;charset=utf8',
+//   'user' => 'postgres',
+//   'pass' => '',
+//];
