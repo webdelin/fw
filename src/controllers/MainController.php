@@ -20,13 +20,23 @@
 namespace src\controllers;
 
 use src\models\Main;
+use vendor\core\App;
 
 class MainController extends AppController{
     
     //public $template = 'main';
     public function indexAction() {
+//        App::$app->getList();
         $model = new Main;
-        $products = \R::findAll('products');
+        \R::fancyDebug(true);
+        $products = App::$app->cache->get('products');
+        if(!$products){
+            $products = \R::findAll('products');
+            App::$app->cache->set('products', $products, 3600*24);
+        }
+//        echo date('Y-m-d H:i', time()) .'<br>';
+//        echo date('Y-m-d H:i', 1504080095) .'<br>';
+        $product = \R::findOne('products', 'id = 2');
         $menu = $this->menu;
         $title = 'MainController';
         $this->setMeta('Start Seite', 'Startseite Description', 'Startseite Schlüsselwort');
