@@ -20,10 +20,6 @@ namespace vendor\core;
 
 class Router {
     
-    //public function __construct() {
-    //    echo 'Hallo Welt!';
-    //}
-    
     protected static $routes    = [];
     
     protected static $route     = [];
@@ -71,14 +67,13 @@ class Router {
                     $contObj->$action();
                     $contObj->getView();
                 }  else {
-                    echo "Methode <strong>$controller::$action</strong> nicht gefunden";
+                    throw new \Exception("Methode <strong>$controller::$action</strong> nicht gefunden", 404);
                 }
             }  else {
-                echo "Kontroller <strong>$controller</strong> nicht gefunden";
+                throw new \Exception("Kontroller <strong>$controller</strong> nicht gefunden", 404);
             }
         }  else {
-            http_response_code(404);
-            include '404.html';
+            throw new \Exception("Die angeforderte Seite wurde nicht gefunden", 404);
         }
     }
     

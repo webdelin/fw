@@ -29,7 +29,6 @@ class MainController extends AppController{
     public function indexAction() {
 //        App::$app->getList();
         $model = new Main;
-        //\R::fancyDebug(true);
         $products = App::$app->cache->get('products');
         if(!$products){
             $products = \R::findAll('products');

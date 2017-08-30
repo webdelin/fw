@@ -16,12 +16,11 @@
  * @license         MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-error_reporting(-1);
-
 use vendor\core\Router;
 
 $url = rtrim($_SERVER['QUERY_STRING'], '/');
 
+define(DEBUG, 1);
 define('WWW', __DIR__);
 define('ROOT', dirname(__DIR__));
 define('CORE', dirname(__DIR__) . '/vendor/core');
