@@ -14,3 +14,25 @@
 [2017-08-30 16:52:05] Fehlermeldungen: Undefined variable: test | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 32
 [2017-08-30 16:52:32] Fehlermeldungen: Undefined variable: test | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 32
 [2017-08-30 16:52:48] Fehlermeldungen: Kontroller <strong>src\controllers\ChgController</strong> nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 73
+[2017-08-30 17:32:41] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 76
+[2017-08-30 17:32:41] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 76
+[2017-08-30 17:32:41] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 76
+[2017-08-30 17:32:41] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 76
+[2017-08-30 17:32:41] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 76
+[2017-08-30 17:32:41] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 76
+[2017-08-30 17:33:01] Fehlermeldungen: Undefined variable: test | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 32
+[2017-08-30 17:33:13] Fehlermeldungen: Undefined variable: test | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 32
+[2017-08-30 17:34:04] Fehlermeldungen: Undefined variable: test | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 32
+[2017-08-30 17:34:04] Fehlermeldungen: Function name must be a string | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 32
+[2017-08-30 17:34:05] Fehlermeldungen: Undefined variable: test | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 32
+[2017-08-30 17:34:05] Fehlermeldungen: Function name must be a string | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 32
+[2017-08-30 17:34:11] Fehlermeldungen: Undefined variable: test | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 32
+[2017-08-30 17:34:11] Fehlermeldungen: Function name must be a string | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 32
+[2017-08-30 17:38:53] Fehlermeldungen: Undefined variable: test | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 32
+[2017-08-30 17:38:53] Fehlermeldungen: Function name must be a string | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 32
+[2017-08-30 17:39:15] Fehlermeldungen: Undefined variable: test | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 32
+[2017-08-30 17:39:41] Fehlermeldungen: Undefined variable: test | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 32
+[2017-08-30 17:40:02] Fehlermeldungen: Undefined variable: test | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 32
+[2017-08-30 17:40:13] Fehlermeldungen: Undefined variable: test | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 32
+[2017-08-30 17:40:59] Fehlermeldungen: Undefined variable: test | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 32
+[2017-08-30 17:40:59] Fehlermeldungen: Function name must be a string | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 32

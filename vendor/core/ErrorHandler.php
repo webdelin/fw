@@ -35,8 +35,9 @@ class ErrorHandler {
     
     public function errorHandler($errno, $errstr, $errfile, $errline) {
         $this->logErrors($errstr, $errfile, $errline);
-        error_log("[" . date('Y-m-d H:i:s') . "] Fehlermeldungen: {$errstr} | Fehlerhafte Datei: {$errfile} | Fehlerhafte Zeile: {$errline}\n", 3, __DIR__ . '/errors.log');
-        $this->displayError($errno, $errstr, $errfile, $errline);
+        if(DEBUG || in_array($errno, [E_USER_ERROR, E_RECOVERABLE_ERROR])){
+            $this->displayError($errno, $errstr, $errfile, $errline);
+        }
         return true;
     }
     
