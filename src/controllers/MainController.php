@@ -49,6 +49,8 @@ class MainController extends AppController{
     public function testAction() {
         if($this->isAjax()){
             $model = new Main;
+//            $data = ['blockInfo' => 'Hallo Welt!', 'code' => 200];
+//            echo json_encode($data);
             $product = \R::findOne('products', "id = {$_POST['id']}");
             $this->loadView('_test', compact('product'));
             die;

@@ -1,7 +1,27 @@
+<?php new vendor\widgets\menu\Menu([
+    'tpl' => WWW. '/menu/select.php',
+    'class' => 'menu-select',
+    'container' => 'select',
+    'table' => 'categories',
+    'cache' => 60,
+    'cacheKey' => 'menu_select',
+]); ?>
+
+<?php 
+//new vendor\widgets\menu\Menu([
+//    'tpl' => WWW. '/menu/list.php',
+//    'class' => 'menu-ul',
+//    'container' => 'ul',
+//    'table' => 'categories',
+//    'cache' => 60,
+//    'cacheKey' => 'menu_ul',
+//]); 
+?>
 <main>
     <section class="movies" id="movies">
         <h2>Grid</h2>
-        <button class="btn btn-default" id="senden">Senden</button>
+        <div id="blockInfo"></div>
+        <button class="btn btn-default" id="senden">Senden</button><br>
         <div class="row">
             <?php if(!empty($products)): ?>
                 <?php foreach ($products as $product): ?>
@@ -33,7 +53,11 @@ $(function(){
             type: 'post',
             data: {'id': 2},
             success: function(res){
-                console.log(res);
+//                var data = JSON.parse(res);
+//                $("#blockInfo").html('<p> ' + data + ' Ausgabe: ' + data.blockInfo + ' | Code: ' + data.code + '</p>')
+                //console.log(res);
+                
+                $("#blockInfo").html(res);
             },
             error: function(){
                 alert('Fehler!');

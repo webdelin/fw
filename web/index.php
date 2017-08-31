@@ -27,6 +27,7 @@ define('CORE', dirname(__DIR__) . '/vendor/core');
 define('SRC', dirname(__DIR__) . '/src');
 define('LIBS', dirname(__DIR__) . '/vendor/libs');
 define('CACHE', dirname(__DIR__) . '/tmp/cache');
+define('WIDGETS', dirname(__DIR__) . '/vendor/widgets');
 define('TEMPLATE', 'default');
 
 require '../vendor/libs/functions.php';
@@ -49,9 +50,3 @@ Router::add('^(?P<controller>[a-z-]+)/?(?P<action>[a-z-]+)?$');
 
 
 Router::dispatch($url);
-
-//if(Router::matchRoute($url)){
-//    debug(Router::getRoute());
-//}else{
-//    echo '404';
-//}
