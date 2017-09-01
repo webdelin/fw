@@ -44,12 +44,13 @@ class View {
     
     public function render($vars) {
         if(is_array($vars)) extract($vars);
-        $file_view = SRC . "/views/{$this->route['controller']}/{$this->view}.php";
+        $file_view = SRC . "/views/{$this->route['prefix']}{$this->route['controller']}/{$this->view}.php";
         ob_start();
         if(is_file($file_view)){
             require $file_view;
         }else{
-            echo "<p>File <strong>$file_view</strong> wurde nicht gefunden</p>";
+            //echo "<p>File <strong>$file_view</strong> wurde nicht gefunden</p>";
+            throw new \Exception("<p>File <strong>$file_view</strong> wurde nicht gefunden</p>", 404);
         }
         
         $content = ob_get_clean();
@@ -63,7 +64,8 @@ class View {
                 }
                 require $file_template;
             }else{
-                echo "<p>Template <strong>$file_template</strong> wurde nicht gefunden</p>";
+                //echo "<p>Template <strong>$file_template</strong> wurde nicht gefunden</p>";
+                throw new \Exception("<p>Template <strong>$file_template</strong> wurde nicht gefunden</p>", 404);
             }
             
         }

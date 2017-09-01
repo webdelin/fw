@@ -65,3 +65,44 @@
 [2017-08-31 16:18:36] Fehlermeldungen: Undefined variable: product | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\views\Main\test.php | Fehlerhafte Zeile: 2
 [2017-08-31 16:24:28] Fehlermeldungen: Class 'vendor\widgets\menu\Menu' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\views\Main\index.php | Fehlerhafte Zeile: 1
 [2017-08-31 16:59:36] Fehlermeldungen: syntax error, unexpected '?>', expecting ']' | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\views\Main\index.php | Fehlerhafte Zeile: 17
+[2017-08-31 17:11:00] Fehlermeldungen: Kontroller <strong>src\controllers\AdminController</strong> nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 73
+[2017-08-31 17:20:36] Fehlermeldungen: Kontroller <strong>src\controllers\AdminController</strong> nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 73
+[2017-08-31 17:20:38] Fehlermeldungen: Kontroller <strong>src\controllers\AdminController</strong> nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 73
+[2017-08-31 17:20:44] Fehlermeldungen: Kontroller <strong>src\controllers\AdminController</strong> nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 73
+[2017-08-31 17:21:41] Fehlermeldungen: Kontroller <strong>src\controllers\TestController</strong> nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 73
+[2017-08-31 17:22:36] Fehlermeldungen: Kontroller <strong>src\controllers\TestController</strong> nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 73
+[2017-08-31 17:22:40] Fehlermeldungen: Kontroller <strong>src\controllers\AdminController</strong> nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 73
+[2017-08-31 17:23:06] Fehlermeldungen: Kontroller <strong>src\controllers\UserController</strong> nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 73
+[2017-08-31 17:29:37] Fehlermeldungen: Kontroller <strong>src\controllers\UserController</strong> nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 77
+[2017-08-31 17:31:03] Fehlermeldungen: Kontroller <strong>src\controllers\UserController</strong> nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 80
+[2017-08-31 17:31:15] Fehlermeldungen: Kontroller <strong>src\controllers\TestController</strong> nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 80
+[2017-08-31 17:31:28] Fehlermeldungen: Kontroller <strong>src\controllers\TestController</strong> nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 80
+[2017-08-31 17:34:06] Fehlermeldungen: Kontroller <strong>src\controllers\admin\TestController</strong> nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 80
+[2017-08-31 17:34:28] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 83
+[2017-08-31 17:34:28] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 83
+[2017-08-31 17:34:28] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 83
+[2017-08-31 17:34:28] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 83
+[2017-08-31 17:34:28] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 83
+[2017-08-31 17:34:28] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 83
+[2017-08-31 17:35:44] Fehlermeldungen: Kontroller <strong>src\controllers\admin\UserController</strong> nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 80
+[2017-08-31 17:37:01] Fehlermeldungen: Methode <strong>src\controllers\admin\UserController::indexAction</strong> nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 77
+[2017-08-31 17:46:54] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 82
+[2017-08-31 17:47:35] Fehlermeldungen: Methode <strong>src\controllers\PageController::indexAction</strong> nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 76
+[2017-08-31 23:19:35] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 82
+[2017-08-31 23:19:36] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 82
+[2017-09-01 11:21:25] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 82
+[2017-09-01 11:21:25] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 82
+[2017-09-01 11:21:25] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 82
+[2017-09-01 11:21:25] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 82
+[2017-09-01 11:21:25] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 82
+[2017-09-01 11:21:25] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 82
+[2017-09-01 11:21:25] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 82
+[2017-09-01 11:49:25] Fehlermeldungen: Class 'vendor\core\base\Exception' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\base\View.php | Fehlerhafte Zeile: 53
+[2017-09-01 11:50:35] Fehlermeldungen: Class 'vendor\core\base\Exception' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\base\View.php | Fehlerhafte Zeile: 53
+[2017-09-01 11:50:57] Fehlermeldungen: <p>File <strong>C:\OpenServer\domains\fw.loc/src/views/admin\User/index.php</strong> wurde nicht gefunden</p> | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\base\View.php | Fehlerhafte Zeile: 53
+[2017-09-01 11:55:54] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 82
+[2017-09-01 11:55:58] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 82
+[2017-09-01 12:08:14] Fehlermeldungen: Call to undefined method src\controllers\admin\UserController::compact() | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\admin\UserController.php | Fehlerhafte Zeile: 34
+[2017-09-01 12:13:21] Fehlermeldungen: Methode <strong>src\controllers\PageController::indexAction</strong> nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 76
+[2017-09-01 12:13:21] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 82
+[2017-09-01 12:13:22] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\core\Router.php | Fehlerhafte Zeile: 82
