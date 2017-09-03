@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="/css/custom.css">
   </head>
   <body>
-        <?php if(!empty($menu)): ?>
-            <div id="menu">
-                <ul>
-                    <li><a href="/">Start</a></li>
-                    <li><a href="/page/about">Seite</a></li>
-                    <li><a href="/admin">Admin</a></li>
-                </ul>
-            </div>
-        <div class="clear"></div>
-        <?php endif; ?>
+    <div id="menu">
+        <ul>
+            <li><a href="/">Start</a></li>
+            <li><a href="/page/about">Seite</a></li>
+            <li><a href="/admin">Admin</a></li>
+            <li><a href="/user/register">Register</a></li>
+            <li><a href="/user/login">Login</a></li>
+            <li><a href="/user/logout">Logout</a></li>
+        </ul>
+    </div>
+    <div class="clear"></div>
     <div class="container">
         <?=$content?>
     <?php // debug(vendor\core\Db::$countSql)?>

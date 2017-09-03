@@ -16,7 +16,6 @@
  * @license         MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-
 namespace src\controllers;
 
 use src\models\Main;
@@ -24,6 +23,9 @@ use mysrc\core\App;
 use mysrc\core\base\View;
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
 
 class MainController extends AppController{
     
@@ -36,7 +38,7 @@ class MainController extends AppController{
         $log->warning('Foo');
         $log->error('Bar');
         
-        $mailer = new \PHPMailer();
+        $mailer = new PHPMailer(true);
         
         $model = new Main;
         

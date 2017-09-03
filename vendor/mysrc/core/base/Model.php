@@ -20,6 +20,7 @@
 namespace mysrc\core\base;
 
 use mysrc\core\Db;
+use Valitron\Validator;
 
 abstract class Model {
     
@@ -28,10 +29,30 @@ abstract class Model {
     protected  $fkey = 'id';
     protected  $field = '';
     protected  $params = [];
-
+    public     $reister = [];
+    public     $errors = [];
+    public     $rules = [];
 
     public function __construct() {
         $this->pdo = Db::instance();
+    }
+    
+    public function load($data) {
+        foreach ($this->register as $name => $value) {
+            if (isset($data[$name])) {
+                $this->reister[$name] = $data[$name];
+            }
+        }
+    }
+    
+    public function validate($data) {
+        $v = new Validator($data);
+        $v->rules($this->rules);
+        if($v->validate()){
+            return true;
+        }
+        $this->errors = $v->errors();
+        return false;
     }
     
     public function query($sql) {

@@ -23,3 +23,51 @@
 [2017-09-03 16:30:54] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
 [2017-09-03 16:31:33] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 39
 [2017-09-03 16:31:35] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 39
+[2017-09-03 16:38:50] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 39
+[2017-09-03 16:38:51] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 39
+[2017-09-03 16:43:11] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 39
+[2017-09-03 16:45:28] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 39
+[2017-09-03 16:46:02] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 16:46:04] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 16:46:22] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 16:46:23] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 16:46:24] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 16:46:43] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 16:46:44] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 16:46:52] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 16:47:09] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 16:47:15] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 16:49:03] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 16:49:05] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 16:49:55] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 16:49:56] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 16:49:58] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 16:51:42] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 17:11:25] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 17:11:26] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\mysrc\core\Router.php | Fehlerhafte Zeile: 82
+[2017-09-03 17:11:26] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\mysrc\core\Router.php | Fehlerhafte Zeile: 82
+[2017-09-03 17:13:31] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 17:14:42] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 17:31:35] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 17:32:38] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 17:33:04] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 17:33:27] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 42
+[2017-09-03 17:33:28] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 42
+[2017-09-03 17:33:29] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 42
+[2017-09-03 17:34:01] Fehlermeldungen: Class 'PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 42
+[2017-09-03 17:37:02] Fehlermeldungen: Class 'src\controllers\PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 17:37:03] Fehlermeldungen: Class 'src\controllers\PHPMailer' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\MainController.php | Fehlerhafte Zeile: 40
+[2017-09-03 21:55:27] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\mysrc\core\Router.php | Fehlerhafte Zeile: 82
+[2017-09-03 21:55:27] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\mysrc\core\Router.php | Fehlerhafte Zeile: 82
+[2017-09-03 21:57:01] Fehlermeldungen: <p>File <strong>C:\OpenServer\domains\fw.loc/src/views/User/logout.php</strong> wurde nicht gefunden</p> | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\mysrc\core\base\View.php | Fehlerhafte Zeile: 53
+[2017-09-03 21:58:29] Fehlermeldungen: <p>File <strong>C:\OpenServer\domains\fw.loc/src/views/User/logout.php</strong> wurde nicht gefunden</p> | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\mysrc\core\base\View.php | Fehlerhafte Zeile: 53
+[2017-09-03 22:18:58] Fehlermeldungen: Class 'src\controllers\User' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\UserController.php | Fehlerhafte Zeile: 28
+[2017-09-03 22:26:14] Fehlermeldungen: Methode <strong>src\controllers\UserController::indexAction</strong> nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\mysrc\core\Router.php | Fehlerhafte Zeile: 76
+[2017-09-03 22:26:17] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\mysrc\core\Router.php | Fehlerhafte Zeile: 82
+[2017-09-03 22:26:17] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\mysrc\core\Router.php | Fehlerhafte Zeile: 82
+[2017-09-03 22:26:17] Fehlermeldungen: Die angeforderte Seite wurde nicht gefunden | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\mysrc\core\Router.php | Fehlerhafte Zeile: 82
+[2017-09-03 23:08:34] Fehlermeldungen: Class 'mysrc\core\base\Validator' not found | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\mysrc\core\base\Model.php | Fehlerhafte Zeile: 48
+[2017-09-03 23:09:24] Fehlermeldungen: Call to undefined method Valitron\Validator::ruler() | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\mysrc\core\base\Model.php | Fehlerhafte Zeile: 50
+[2017-09-03 23:10:11] Fehlermeldungen: Call to undefined method Valitron\Validator::validata() | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\vendor\mysrc\core\base\Model.php | Fehlerhafte Zeile: 51
+[2017-09-03 23:12:24] Fehlermeldungen: Call to undefined method src\models\User::validata() | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\UserController.php | Fehlerhafte Zeile: 32
+[2017-09-03 23:13:07] Fehlermeldungen: Call to undefined method src\models\User::validata() | Fehlerhafte Datei: C:\OpenServer\domains\fw.loc\src\controllers\UserController.php | Fehlerhafte Zeile: 32

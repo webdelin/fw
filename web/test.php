@@ -1,6 +1,6 @@
 <?php
 
-require '../vendor/libs/rb.php';
+require '../vendor/mysrc/libs/rb.php';
 $db = require '../config/dbconnect.php';
 R::setup($db['dsn'], $db['user'], $db['pass'], $options);
 //R::freeze(true);
@@ -69,6 +69,16 @@ $poduct->img = 'https://placehold.it/300x250';
 $poduct->img_galery = 'https://placehold.it/300x250,https://placehold.it/300x250,https://placehold.it/300x250';
 $id = R::store($poduct);
 */
+
+/*
+$user = R::xdispense('user');
+$user->login = 'wendelin';
+$user->password = '123';
+$user->email = 'gereinw@gmail.com';
+$user->name = 'Wendelin Gerein';
+$user->role = 'admin';
+$id = R::store($user);
+ */
 
 //$cats = R::findAll('category');
 

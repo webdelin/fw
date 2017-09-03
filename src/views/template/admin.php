@@ -13,6 +13,9 @@
             <li><a href="/">Start</a></li>
             <li><a href="/page/about">Seite</a></li>
             <li><a href="/admin">Admin</a></li>
+            <li><a href="/user/register">Register</a></li>
+            <li><a href="/user/login">Login</a></li>
+            <li><a href="/user/logout">Logout</a></li>
         </ul>
     </div>
     <div class="clear"></div>
