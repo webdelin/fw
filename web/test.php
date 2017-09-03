@@ -3,44 +3,72 @@
 require '../vendor/libs/rb.php';
 $db = require '../config/dbconnect.php';
 R::setup($db['dsn'], $db['user'], $db['pass'], $options);
-R::freeze(true);
+//R::freeze(true);
 R::fancyDebug( TRUE );
 
 //var_dump(R::testConnection());
 
-//$poduct = R::dispense( 'product' );
+R::ext('xdispense', function ($table_name) {
+    return R::getRedBean()->dispense($table_name);
+});
 
-//Create
-//$cat = R::dispense('category');
-//$cat->title = 'Kategorie 1';
-//$id = R::store($cat);
+/*
+$cat = R::xdispense('category');
+$cat->title = 'Kategorie 1';
+$cat->parent = 0;
+$cat->alias = 'kategorie-link';
+$cat->keyword = 'keyword';
+$cat->descripton = 'meta beschreibung';
+$cat->title_h1 = 'H1 überschrigt';
+$cat->title_h2 = 'H2 überschrigt';
+$cat->content = 'kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung';
+$id = R::store($cat);
+ * 
+ */
 
-//var_dump($cat);
+/*
+$cat = R::xdispense('categories');
+$cat->title = 'Prod Kategorie 1';
+$cat->parent = 0;
+$cat->alias = 'prod-kategorie-link';
+$cat->keyword = 'keyword';
+$cat->descripton = 'meta beschreibung';
+$cat->title_h1 = 'H1 überschrigt';
+$cat->title_h2 = 'H2 überschrigt';
+$cat->content = 'kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung kategorie beschreibung';
+$id = R::store($cat);
+ * 
+ */
 
-//Read
-//$cat = R::load('category', 4);
-//print_r($cat);
 
-//echo $cat->title . '<br>';
-//
-////Update
-//
-//$cat->title = 'Kategorie 4';
-//R::store($cat);
-
-//
-//$cat = R::dispense( 'category' );
-//$cat->title = 'Kategorie 4!!!';
-//$cat->id = 4;
-//R::store($cat);
-//echo $cat['title'];
-
-////Delete
-//$cat = R::load('category', 4);
-//R::trash($cat);
-
-//Tabelle leeren
-//R::wipe('category');
+/*
+$poduct = R::xdispense('products');
+$poduct->title = 'Produkt Title Demonstration';
+$poduct->alias = 'produkt-title-demo';
+$poduct->category_id = NULL;
+$poduct->produckt_id = NULL;
+$poduct->shop_id = NULL;
+$poduct->keyword = 'keyword';
+$poduct->descripton = 'meta beschreibung';
+$poduct->h1_title = 'überschrigt h1';
+$poduct->h2_title = 'überschrigt h2';
+$poduct->content = 'produkt beschreibung produkt beschreibung';
+$poduct->price = 55.00;
+$poduct->old_price = 99.00;
+$poduct->delivery_price = 4.50;
+$poduct->delivery_time = '2 bis 4 Tage';
+$poduct->partner_link = 'http://www.webdelin.de';
+$poduct->material = 'holz';
+$poduct->color = 'weiß';
+$poduct->breite = 555;
+$poduct->hoeche = 1200;
+$poduct->laenge = 1800;
+$poduct->gewicht = 5.5;
+$poduct->efficiency = 'A++';
+$poduct->img = 'https://placehold.it/300x250';
+$poduct->img_galery = 'https://placehold.it/300x250,https://placehold.it/300x250,https://placehold.it/300x250';
+$id = R::store($poduct);
+*/
 
 //$cats = R::findAll('category');
 
@@ -48,8 +76,8 @@ R::fancyDebug( TRUE );
 
 //$cats = R::findAll('category', 'title LIKE ?', ['%5%']);
 
-$cat = R::findOne('category', 'id = 6');
-
-echo '<pre>';
-
-print_r($cat);
+//$cat = R::findOne('category', 'id = 6');
+//
+//echo '<pre>';
+//
+//print_r($cat);

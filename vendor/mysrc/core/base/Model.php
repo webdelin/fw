@@ -17,9 +17,9 @@
  * @license         MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-namespace vendor\core\base;
+namespace mysrc\core\base;
 
-use vendor\core\Db;
+use mysrc\core\Db;
 
 abstract class Model {
     

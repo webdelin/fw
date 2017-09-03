@@ -16,7 +16,7 @@
  * @license         MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-namespace vendor\core;
+namespace mysrc\core;
 
 class Router {
     

@@ -1,4 +1,4 @@
-<?php new vendor\widgets\menu\Menu([
+<?php new mysrc\widgets\menu\Menu([
     'tpl' => WWW. '/menu/select.php',
     'class' => 'menu-select',
     'container' => 'select',
@@ -8,7 +8,7 @@
 ]); ?>
 
 <?php 
-//new vendor\widgets\menu\Menu([
+//new mysrc\widgets\menu\Menu([
 //    'tpl' => WWW. '/menu/list.php',
 //    'class' => 'menu-ul',
 //    'container' => 'ul',

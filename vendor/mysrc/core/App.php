@@ -17,10 +17,10 @@
  * @license         MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-namespace vendor\core;
+namespace mysrc\core;
 
-use vendor\core\Registry;
-use vendor\core\ErrorHandler;
+use mysrc\core\Registry;
+use mysrc\core\ErrorHandler;
 
 class App {
     

@@ -16,30 +16,30 @@
  * @license         MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-use vendor\core\Router;
+use mysrc\core\Router;
 
 $url = rtrim($_SERVER['QUERY_STRING'], '/');
 
 define(DEBUG, 1);
 define('WWW', __DIR__);
 define('ROOT', dirname(__DIR__));
-define('CORE', dirname(__DIR__) . '/vendor/core');
+define('CORE', dirname(__DIR__) . '/vendor/mysrc/core');
 define('SRC', dirname(__DIR__) . '/src');
-define('LIBS', dirname(__DIR__) . '/vendor/libs');
+define('LIBS', dirname(__DIR__) . '/vendor/mysrc/libs');
 define('CACHE', dirname(__DIR__) . '/tmp/cache');
-define('WIDGETS', dirname(__DIR__) . '/vendor/widgets');
+define('WIDGETS', dirname(__DIR__) . '/vendor/mysrc/widgets');
 define('TEMPLATE', 'default');
 
-require '../vendor/libs/functions.php';
+require ROOT . '/vendor/mysrc/libs/functions.php';
+require ROOT . '/vendor/autoload.php';
 
-spl_autoload_register(function($class){
-    $file = ROOT . '/' . str_replace('\\', '/', $class) . '.php';
-    if(is_file($file)){
-        require_once $file;
-    }
-});
-
-new \vendor\core\App;
+//spl_autoload_register(function($class){
+//    $file = ROOT . '/' . str_replace('\\', '/', $class) . '.php';
+//    if(is_file($file)){
+//        require_once $file;
+//    }
+//});
+new \mysrc\core\App;
 
 Router::add('^page/(?P<action>[a-z-]+)/(?P<alias>[a-z-]+)$', ['controller' => 'Page']);
 Router::add('^page/(?P<alias>[a-z-]+)$', ['controller' => 'Page', 'action' => 'view']);

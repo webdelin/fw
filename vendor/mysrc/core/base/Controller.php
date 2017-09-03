@@ -17,7 +17,7 @@
  * @license         MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-namespace vendor\core\base;
+namespace mysrc\core\base;
 
 abstract class Controller {
         

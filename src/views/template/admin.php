@@ -2,23 +2,21 @@
 <html lang="de">
   <head>
     <meta charset="utf-8">
-    <?php \vendor\core\base\View::getMeta()?>
+    <?php \mysrc\core\base\View::getMeta()?>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/custom.css">
   </head>
   <body>
+    <div id="menu">
+        <ul>
+            <li><a href="/">Start</a></li>
+            <li><a href="/page/about">Seite</a></li>
+            <li><a href="/admin">Admin</a></li>
+        </ul>
+    </div>
+    <div class="clear"></div>
     <div class="container">
-        <?php if(!empty($menu)): ?>
-            <div id="menu">
-                <ul>
-                  <?php foreach ($menu as $item):?>
-                    <li><a href="catalog/<?=$item['id']?>"><?=$item['title']?></a></li>
-                  <?php endforeach;?>
-                </ul>
-            </div>
-        <div class="clear"></div>
-        <?php endif; ?>
         <h1>Admin</h1>
         <?=$content?>
       

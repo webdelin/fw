@@ -17,8 +17,8 @@
  * @license         MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-namespace vendor\widgets\menu;
-use vendor\libs\Cache;
+namespace mysrc\widgets\menu;
+use mysrc\libs\Cache;
 
 class Menu {
     

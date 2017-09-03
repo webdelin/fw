@@ -19,7 +19,7 @@
 
 namespace src\controllers\admin;
 
-use vendor\core\base\Controller;
+use mysrc\core\base\Controller;
 
 class AppController extends Controller{
     public $template = 'admin';

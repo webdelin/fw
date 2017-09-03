@@ -18,13 +18,7 @@
  */
 
 return [
-    'dsn' => 'mysql:host=localhost;dbname=fw;charset=utf8',
-    'user' => 'root',
+    'dsn' => 'pgsql:host=127.0.0.1;dbname=fw;',
+    'user' => 'postgres',
     'pass' => '',
 ];
-//return [
-//    
-//   'dsn' => 'pgsql:host=localhost;dbname=fw;charset=utf8',
-//   'user' => 'postgres',
-//   'pass' => '',
-//];

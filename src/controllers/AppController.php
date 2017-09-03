@@ -19,7 +19,7 @@
 
 namespace src\controllers;
 
-class AppController extends \vendor\core\base\Controller{
+class AppController extends \mysrc\core\base\Controller{
     
     public $menu;
     public $meta = [];

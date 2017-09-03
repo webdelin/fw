@@ -20,16 +20,26 @@
 namespace src\controllers;
 
 use src\models\Main;
-use vendor\core\App;
-use vendor\core\base\View;
+use mysrc\core\App;
+use mysrc\core\base\View;
+use Monolog\Handler\StreamHandler;
+use Monolog\Logger;
 
 class MainController extends AppController{
     
     //public $template = 'main';
     public function indexAction() {
-//        App::$app->getList();
+        
+        $log = new Logger('name');
+        $log->pushHandler(new StreamHandler(ROOT. '/tmp/my_monolog.log', Logger::WARNING));
+        
+        $log->warning('Foo');
+        $log->error('Bar');
+        
+        $mailer = new \PHPMailer();
+        
         $model = new Main;
-        // echo $test;
+        
         $products = App::$app->cache->get('products');
         if(!$products){
             $products = \R::findAll('products');

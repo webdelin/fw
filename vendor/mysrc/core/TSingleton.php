@@ -17,8 +17,17 @@
  * @license         MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
 
-namespace vendor\libs;
+namespace mysrc\core;
 
-class Test {
-    //put your code here
+trait TSingleton {
+    
+protected static $instance;
+
+    public static function instance() {
+        if(self::$instance === null){
+            self::$instance = new self;
+        }
+        return self::$instance;
+    }
+    
 }

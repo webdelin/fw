@@ -19,16 +19,16 @@
 
 namespace src\controllers\admin;
 
-use vendor\core\base\View;
+use mysrc\core\base\View;
 
 class UserController extends AppController{
     
-    public $template = 'default';
+    // public $template = 'default';
 
     public function indexAction() {
         View::setMeta("Administrationsbereich", "Administrationsbereich beschreibung", "Administrationsbereich");
         $test = "Testvariable";
-        $data = ['test' => 'testconzent', 'content_id'=> 55];
+        $data = ['test' => 'testcontent', 'content_id'=> 55];
 //        $this->set([
 //            'test' => $test,
 //            'data' => $data,

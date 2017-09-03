@@ -20,8 +20,8 @@
 
 $config = [
     'components' => [
-        'cache' => 'vendor\libs\Cache',
-        'test' => 'vendor\libs\Test'
+        'cache' => 'mysrc\libs\Cache',
+        'test' => 'mysrc\libs\Test'
     ],
 ];
 return $config;

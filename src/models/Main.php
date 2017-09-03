@@ -19,7 +19,7 @@
 
 namespace src\models;
 
-class Main extends \vendor\core\base\Model{
+class Main extends \mysrc\core\base\Model{
     
     public $table = 'products';
     public $fkey = 'id';
